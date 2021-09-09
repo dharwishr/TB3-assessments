@@ -67,6 +67,11 @@ button{
 }
 #landing{
     display: flex;
+    margin:0;
+    padding:0;
+    left:0;
+}
+.landing-flex-box{
     justify-content: space-between;
 }
 .flex-justify-content{
@@ -82,7 +87,7 @@ button{
     /* position: absolute; */
 }
 #landing-welcome{
-
+    float: left;
 }
 #demo-input{
     width: 300px;
