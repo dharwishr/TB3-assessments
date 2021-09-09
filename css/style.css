@@ -72,9 +72,6 @@ button{
     padding:0;
     left:0;
 }
-.flex-justify-content{
-    justify-content: space-between;
-}
 .book-a-demo-container{
     background-color: #F4F7FA;
     width:100%;
@@ -104,6 +101,11 @@ button{
     border-radius: 10px;
     margin-right:10px;
     border:1px solid #F4F7FA;
+}
+.center{
+    margin:auto;
+    padding: 40px;
+    width: 40%
 }
 .box-why-we-choose{
     min-height: 80%;
@@ -178,3 +180,68 @@ button{
 .email{
     font-weight:bold;
 }
+@media screen and (min-width: 100px) and (max-width:639px){
+    .landing{
+        flex-direction: column;
+    }
+    .landing-welcome{
+        justify-content: none;
+        width:100%;
+    }
+    .landing-h1{
+        text-align: center;
+    }
+    .landing-welcome p{
+        text-align: center;
+    }
+    .landing-img{
+        justify-content: none;
+        width:100%;
+    }
+    .landing-img img{
+        margin-top:20px;
+        width: 100%;
+    }
+    #button-landing{
+        margin:auto;
+    }
+    ul{
+        display: none;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+    .flex-box{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .footer{
+        height:auto;
+    }
+    .footer-flex{
+        flex-direction: column;
+        width:100%;
+    }
+    .float-right{
+        text-align: left;
+    }
+    .footer-box{
+        width:100%;
+    }
+    .book-a-demo-container{
+        height:auto;
+    }
+    #demo-input{
+        width:85%;
+        margin:20px 0;
+    }
+    #button-landing{
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .center{
+        width:100%;
+        padding:0px;
+        margin:20px 0;
+    }
+  }
