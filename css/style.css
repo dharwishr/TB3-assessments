@@ -1,17 +1,22 @@
 body{
     font-family: Helvetica, sans-serif;
 }
-box{
+.box{
     width: 100%;
     height: 100%;
+    position: relative;
+    margin:0;
+    padding:0;
 }
 .nav{
     width: 100%;
     height: 50px;
 }
 .container{
-    width: 80%;
-    margin:auto
+    max-width: 80%;
+    margin:auto;
+    padding: 0;
+    position: relative;
 }
 #title{
     color:#000000;
@@ -29,16 +34,52 @@ ul li{
     display: inline-block;
     padding:15px 10px;
     font-weight: 500;
+    font-size: 16px;
 }
 .login{
-    float:right;
+    display: inline-block;
+    position: absolute;
+    right:0;
 }
 button{
-    padding:15px 10px;
+    padding:15px 20px;
     border:none;
-    background:none
+    font-size: 16px;
+    background:none;
+    font-weight: 600;
 
 }
-#button1{
+#button-login{
     background-color: #8EE5D1;
+    border-radius: 50px;
+}
+#button-landing{
+    background-color: #8EE5D1;
+    border-radius: 50px;
+    font-size: 20px;
+}
+#landing{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-justify-content{
+    justify-content: space-between;
+}
+.book-a-demo-container{
+    background-color: #F4F7FA;
+    width:100%;
+    height:150px;
+    position: absolute;
+}
+#landing-welcome{
+
+}
+#demo-input{
+    width: 300px;
+    font-size:20px;
+    padding: 10px 25px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right:10px;
+    border:1px solid #F4F7FA;
 }
